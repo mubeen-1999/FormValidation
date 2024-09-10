@@ -1,0 +1,123 @@
+
+===========================NUMBER GUESSING GAME===================================
+
+let num=4;
+
+let input = prompt("guess the number (1-10)");
+
+   while(input != num){
+     input = prompt("wrong answer ,guess the number again!(1-10)");
+   }
+    console.log("you are right!");
+   
+===============================STRING PRACTICE QUESTION=============================
+
+let username = prompt('enter your full name');
+let un2 = '@';
+
+console.log(`username = ${username} ,username should be`,un2 + username + username.length);
+
+==================================SUM & AVG MARKS OF AN ARRAY========================
+
+let marks = [85,97,44,37,76,60];
+let sum = null;
+let avg = null;
+
+for(i=0;i<marks.length;i++){
+  sum = sum + marks[i];
+  avg = sum / marks.length;
+
+}
+console.log('Sum = ',sum);
+console.log('Average marks =',avg);
+
+=================================10% OFF ON ALL ARRAY ITEMS==========================
+
+let items = [250,645,300,900,50];
+
+let offer = null;
+
+for(let i=0; i<items.length; i++){
+   offer = items[i] / 10;
+  items[i] = items[i] - offer;
+  
+}
+console.log(items);
+
+==============================FUNCTION TO COUNT VOWELS FROM STRING=========================
+
+// function vowels(str) {
+//   let count = 0;
+//   for (const char of str) {
+//     if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+//       count = count + 1;
+//     }
+//   }
+//   return count;
+
+// }
+
+_____________________________ARROW FUNCTION USED______________________________
+
+const vowel = (str) => {
+  let count = 0;
+   for (const char of str) {
+     if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+       count = count + 1;
+     }
+   }
+   return count;
+}
+
+=============================SQUARE OF EACH NUMBER IN ARRAY===================================
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.forEach((val)=>{
+  console.log(val*val);
+}
+
+)
+
+==========================FILTER OUT MARKS ABOVE 90===================================
+
+let marks = [97,64,32,49,99,96,86];
+
+let newArr = marks.filter((val) =>{
+return val > 90;
+
+})
+console.log(newArr);
+
+=========================SUM OF ALL NUM IN ARR (USING REDUCE METHOD)=====================
+
+let n = prompt("ENTER ANY NUMBER!");
+ival = 0;
+let arr = [];
+
+for (let i = 1; i <= n; i++) {
+    arr [i-1] = i;
+}
+console.log(arr);
+const sum = arr.reduce((res,curr) =>{ 
+    return  res + curr;
+})
+console.log(sum);
+
+=========================PRODUCT(FACTORIAL) OF ALL NUM IN ARR (USING REDUCE METHOD)========================
+
+let n = prompt("ENTER ANY NUMBER!");
+ival = 0;
+let arr = [];
+
+for (let i = 1; i <= n; i++) {
+    arr [i-1] = i;
+}
+console.log(arr);
+const prod = arr.reduce((res,curr) =>{ 
+    return  res * curr;
+})
+console.log(prod);
+
+
+  
